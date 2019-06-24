@@ -10,4 +10,10 @@ public interface UserClient {
 
     @GetMapping("/client")
     String sayHello(@RequestParam(value = "name") String name);
+
+    @GetMapping("/timeOut")
+    String timeOut() throws InterruptedException;
+
+    @GetMapping("/exception")
+    String exception() throws Exception;
 }

@@ -23,8 +23,22 @@ public class ServiceClientApplication {
 	String port;
 
 	@GetMapping("/client")
-	public String home(@RequestParam(value = "name", defaultValue = "bazooka") String name) {
+	public String client(@RequestParam(value = "name", defaultValue = "bazooka") String name) {
 		return "hi " + name + " ,i am from port:" + port;
+	}
+
+	@GetMapping("/timeOut")
+	public String timeOut() throws InterruptedException {
+		Thread.sleep(10000L);
+		return "TimeOut，I am from port:" + port;
+	}
+
+	@GetMapping("/exception")
+	public String exception() throws Exception {
+		if (System.currentTimeMillis() % 2 == 0) {
+			throw new Exception("This is a error!");
+		}
+		return "Exception，I am from port:" + port;
 	}
 
 }

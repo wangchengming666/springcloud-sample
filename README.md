@@ -4,7 +4,6 @@
 - JDK8
 - Spring Boot 2.1.5.RELEASE
 - Spring Cloud Finchley.RELEASE
-
 ##### 原文	
 这是Spring Cloud的使用案例仓库，原文如下：	
 - [Spring Cloud介绍](https://blog.csdn.net/wangchengming1/article/details/91875747)	

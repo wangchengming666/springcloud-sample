@@ -16,7 +16,17 @@ public class HelloController {
     UserClient userClient;
 
     @GetMapping("/sayHello")
-    public String sayHello(@RequestParam String name){
+    public String sayHello(@RequestParam String name) {
         return userClient.sayHello(name);
+    }
+
+    @GetMapping("/timeOut")
+    public String timeOut() throws InterruptedException {
+        return userClient.timeOut();
+    }
+
+    @GetMapping("/exception")
+    public String exception() throws Exception {
+        return userClient.exception();
     }
 }

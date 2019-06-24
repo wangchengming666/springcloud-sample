@@ -8,4 +8,10 @@ spring:
     application:
         name: service-feign
 
-feign.hystrix.enabled: true
+feign:
+    hystrix:
+        enabled: true
+
+feign:
+    httpclient:
+        connection-timeout: 5000

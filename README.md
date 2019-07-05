@@ -12,3 +12,4 @@
 - [Spring Cloud - 熔断（Hystrix）](https://blog.csdn.net/wangchengming1/article/details/93191815)
 - [Spring Cloud - 网关（Spring Cloud Gateway）](https://blog.csdn.net/wangchengming1/article/details/93719792)
 - [Spring Cloud - 配置管理（Spring Cloud Config）](https://blog.csdn.net/wangchengming1/article/details/94397518)
+- [Spring Cloud - 链路追踪（Zipkin）](https://blog.csdn.net/wangchengming1/article/details/94734539)

@@ -7,17 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="Feign-sample" />
         <module name="service-client" />
-        <module name="service-consumer-sample" />
         <module name="service-feign" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Feign-sample" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="service-client" options="-parameters" />
-      <module name="service-consumer-sample" options="-parameters" />
       <module name="service-feign" options="-parameters" />
     </option>
   </component>
